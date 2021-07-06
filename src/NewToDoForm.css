@@ -1,0 +1,31 @@
+.NewToDoForm{
+  padding: 1rem;
+}
+
+.NewToDoForm form {
+  display: flex;
+}
+
+.NewToDoForm button {
+  background-color: #fd5b5e;
+  color: #FFF;
+  border: 1px solid #ffc4c5;
+  padding: 0.6rem 0.6rem;
+}
+
+.NewToDoForm input{
+  padding: 0.6rem;
+  border: 1px solid #ffc4c5;
+  margin-right: 3px;
+  flex-grow: 1;
+}
+
+@media (min-width: 548px) {
+  .NewToDoForm{
+    padding: 3rem;
+  }
+
+  .NewToDoForm button {
+    padding: 0.6rem 1.5rem;
+  }
+}

@@ -1,0 +1,53 @@
+.ToDo {
+  background-color: #ff6b6b;
+  padding: 0.7rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin: 3px 0;
+}
+
+.ToDo .btns {
+  display: flex;
+  align-items: center;
+}
+
+.ToDo button {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-size: 1.1rem;
+}
+
+.ToDo.inactive p {
+  text-decoration: line-through;
+}
+
+.editForm {
+  display: flex;
+  margin: 0 1rem;
+}
+
+.editForm input {
+  padding: 0.6rem;
+  border: 1px solid #ffc4c5;
+  margin-right: 3px;
+  flex-grow: 1;
+}
+
+.editForm button {
+  background-color: #fd5b5e;
+  color: #FFF;
+  border: 1px solid #ffc4c5;
+  padding: 0.6rem 1.6rem;
+}
+
+@media (min-width: 548px) {
+  .editForm {
+    padding: 3rem;
+    margin: 0;
+  }
+  .editForm button {
+    padding: 0.6rem 2.4rem;
+  }
+}

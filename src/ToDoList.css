@@ -1,0 +1,36 @@
+.ToDoList{
+  background-color: #fd5b5e;
+  color: white;
+  width: 90%;
+  min-width: 320px;
+}
+
+.title{
+  padding: 0 3rem;
+  margin-bottom: 2rem;
+}
+
+.title h1 {
+  margin-bottom: 0;
+}
+
+.To small{
+  position: absolute;
+}
+
+.title::after{
+  content: '';
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-top: 1px solid #ffc4c5;
+}
+
+@media (min-width: 548px) {
+  .ToDoList{
+    width: 80%;
+    max-width: 800px;
+  }
+}
