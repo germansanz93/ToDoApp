@@ -13,6 +13,10 @@
   padding: 0.6rem 0.6rem;
 }
 
+.NewToDoForm button:hover{
+  cursor: pointer;
+}
+
 .NewToDoForm input{
   padding: 0.6rem;
   border: 1px solid #ffc4c5;

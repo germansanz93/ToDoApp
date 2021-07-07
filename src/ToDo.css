@@ -19,8 +19,31 @@
   font-size: 1.1rem;
 }
 
+.ToDo p:hover, .ToDo button{
+  cursor: pointer;
+}
+
 .ToDo.inactive p {
-  text-decoration: line-through;
+  position: relative;
+  color: #FFF9;
+}
+
+.ToDo.inactive p:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -0.5rem;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #FFF9;
+  animation: strikeitem 0.5s ease-out 0s forwards;
+}
+
+@keyframes strikeitem {
+  to{
+    width: calc(100% + 1rem);
+  }
 }
 
 .editForm {
@@ -40,6 +63,10 @@
   color: #FFF;
   border: 1px solid #ffc4c5;
   padding: 0.6rem 1.6rem;
+}
+
+.editForm button:hover{
+  cursor: pointer;
 }
 
 @media (min-width: 548px) {
